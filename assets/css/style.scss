@@ -104,8 +104,8 @@ body, html{
     align-items: flex-end;
     justify-content: space-around;
     
-    >.color1, .color2, .color3{
-        background-color: rgb(64, 55, 143);
+    >.color{
+        background-color: rgba(64, 55, 143, 0.582);
         padding: 5px;
         border-radius: 5px;
         color:aliceblue;
@@ -219,4 +219,15 @@ body, html{
                         }
                     }
             }
+}
+.row-color >.color-selected{
+        background-color: rgb(49, 19, 218);
+        padding: 5px;
+        border-radius: 5px;
+        color:aliceblue;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
 }

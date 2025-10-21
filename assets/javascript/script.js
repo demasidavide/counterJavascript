@@ -48,28 +48,41 @@ generate.addEventListener('click', ()=>{
     nuovoDiv.append(rowSpan);
     // creo 3 span per colori
     const span1=document.createElement('span');
-    span1.classList.add('color1');
+    span1.classList.add('color-selected');
     span1.textContent= 'Colore 1'
     rowSpan.appendChild(span1);
     span1.addEventListener('click',()=>{
         counter.className= 'counter';
+        span1.className='color-selected'
+        span2.className='color'
+        span3.className='color'
+
     });
 
     const span2=document.createElement('span');
-    span2.classList.add('color2');
+    span2.classList.add('color');
     span2.textContent= 'Colore 2';
     rowSpan.appendChild(span2);
     span2.addEventListener('click',()=>{
         counter.className= 'counter-2'
+        span1.className='color'
+        span2.className='color-selected'
+        span3.className='color'
     });
 
     const span3=document.createElement('span');
-    span3.classList.add('color3');
+    span3.classList.add('color');
     span3.textContent= 'Colore 3'
     rowSpan.appendChild(span3);
     span3.addEventListener('click',()=>{
         counter.className= 'counter-3'
-    })
+        span1.className='color'
+        span2.className='color'
+        span3.className='color-selected'
+    });
+ 
+
+
 
     }else{
         alert('Elemento gia creato');
