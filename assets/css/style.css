@@ -29,8 +29,14 @@ body, html {
 .container-row-up > .hi > .generate {
   background-color: azure;
   color: rgb(64, 55, 143);
+  border: none;
   border-radius: 20px;
   padding: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.container-row-up > .hi > .generate:hover {
+  box-shadow: 5px 5px 15px 5px rgba(226, 221, 221, 0.411);
 }
 
 .container-row-down {
@@ -74,6 +80,7 @@ body, html {
   align-items: center;
 }
 .container-row-down > .counter > .row-button > #plus, .container-row-down > .counter > .row-button #minus {
+  cursor: pointer;
   height: auto;
   width: 30%;
   font-weight: 900;
@@ -86,8 +93,12 @@ body, html {
 .container-row-down > .counter > .row-button > #plus:active, .container-row-down > .counter > .row-button #minus:active {
   background-color: rgb(86, 86, 116);
 }
+.container-row-down > .counter > .row-button > #plus:hover, .container-row-down > .counter > .row-button #minus:hover {
+  border: solid 1px white;
+}
 
 .row-color {
+  margin-top: 30px;
   width: 20%;
   height: 10%;
   display: flex;
@@ -95,7 +106,7 @@ body, html {
   justify-content: space-around;
 }
 .row-color > .color1, .row-color .color2, .row-color .color3 {
-  background-color: rgb(87, 87, 87);
+  background-color: rgb(64, 55, 143);
   padding: 5px;
   border-radius: 5px;
   color: aliceblue;
@@ -140,6 +151,7 @@ body, html {
   align-items: center;
 }
 .counter-2 > .row-button > #plus, .counter-2 > .row-button #minus {
+  cursor: pointer;
   height: auto;
   width: 30%;
   font-weight: 900;
@@ -151,6 +163,9 @@ body, html {
 }
 .counter-2 > .row-button > #plus:active, .counter-2 > .row-button #minus:active {
   background-color: rgb(86, 86, 116);
+}
+.counter-2 > .row-button > #plus:hover, .counter-2 > .row-button #minus:hover {
+  border: solid 1px rgb(13, 9, 216);
 }
 
 .counter-3 {
@@ -187,6 +202,7 @@ body, html {
   align-items: center;
 }
 .counter-3 > .row-button > #plus, .counter-3 > .row-button #minus {
+  cursor: pointer;
   height: auto;
   width: 30%;
   font-weight: 900;
@@ -198,4 +214,7 @@ body, html {
 }
 .counter-3 > .row-button > #plus:active, .counter-3 > .row-button #minus:active {
   background-color: rgb(86, 86, 116);
+}
+.counter-3 > .row-button > #plus:hover, .counter-3 > .row-button #minus:hover {
+  border: solid 1px rgb(29, 28, 28);
 }/*# sourceMappingURL=style.css.map */

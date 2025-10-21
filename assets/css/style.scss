@@ -26,8 +26,14 @@ body, html{
             >.generate{
                 background-color: azure;
                 color: rgb(64, 55, 143);
+                border: none;
                 border-radius: 20px;
                 padding: 8px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    box-shadow: 5px 5px 15px 5px rgba(226, 221, 221, 0.411);
+                }
             }
     }
 }
@@ -71,6 +77,7 @@ body, html{
                 align-items: center;
 
                     > #plus , #minus {
+                        cursor: pointer;
                         height: auto;
                         width: 30% ;
                         font-weight: 900;
@@ -82,11 +89,15 @@ body, html{
                         &:active {
                             background-color:  rgb(86, 86, 116);
                         }
+                        &:hover{
+                            border:solid 1px white;
+                        }
                     }
             }
     }
 }
 .row-color{
+    margin-top: 30px;
     width: 20%;
     height: 10%;
     display: flex;
@@ -94,7 +105,7 @@ body, html{
     justify-content: space-around;
     
     >.color1, .color2, .color3{
-        background-color: rgb(87, 87, 87);
+        background-color: rgb(64, 55, 143);
         padding: 5px;
         border-radius: 5px;
         color:aliceblue;
@@ -139,6 +150,7 @@ body, html{
                 align-items: center;
 
                     > #plus , #minus {
+                        cursor: pointer;
                         height: auto;
                         width: 30% ;
                         font-weight: 900;
@@ -149,6 +161,9 @@ body, html{
                         border: none;
                         &:active {
                             background-color:  rgb(86, 86, 116);
+                        }
+                        &:hover{
+                            border:solid 1px rgb(13, 9, 216);
                         }
                     }
             }
@@ -187,6 +202,7 @@ body, html{
                 align-items: center;
 
                     > #plus , #minus {
+                        cursor: pointer;
                         height: auto;
                         width: 30% ;
                         font-weight: 900;
@@ -197,6 +213,9 @@ body, html{
                         border: none;
                         &:active {
                             background-color:  rgb(86, 86, 116);
+                        }
+                        &:hover{
+                            border:solid 1px rgb(29, 28, 28);
                         }
                     }
             }
