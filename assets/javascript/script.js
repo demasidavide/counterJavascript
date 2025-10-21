@@ -1,5 +1,4 @@
 let number=0;
-
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
     // controllo per vedere se la finestra esiste gia
@@ -26,13 +25,11 @@ generate.addEventListener('click', ()=>{
     btnP.id='plus';
     btnP.textContent='+';
     rowButton.appendChild(btnP);
-
     // funzione aggiungi numero
     btnP.addEventListener('click',()=>{
         number++;
         display.textContent=number;
      });   
-
     const btnM=document.createElement('button');
     btnM.id='plus';
     btnM.textContent='-';
@@ -58,7 +55,6 @@ generate.addEventListener('click', ()=>{
         span3.className='color'
 
     });
-
     const span2=document.createElement('span');
     span2.classList.add('color');
     span2.textContent= 'Colore 2';
@@ -69,7 +65,6 @@ generate.addEventListener('click', ()=>{
         span2.className='color-selected'
         span3.className='color'
     });
-
     const span3=document.createElement('span');
     span3.classList.add('color');
     span3.textContent= 'Colore 3'
@@ -83,9 +78,4 @@ generate.addEventListener('click', ()=>{
     }else{
         alert('Counter già creato!');
     }
-
-     
-
-
-
 })
