@@ -54,12 +54,17 @@ body, html {
 .container-row-down > .counter > .display {
   height: 40%;
   width: 95%;
-  border: solid red 1px;
   margin: 9px;
   border: solid 1px green;
   background-color: rgb(76, 134, 76);
   border-radius: 10px;
   color: aliceblue;
+  text-align: center;
+  justify-items: center;
+  font-size: 3rem;
+  padding: 5px;
+  word-break: break-all;
+  white-space: normal;
 }
 .container-row-down > .counter > .row-button {
   height: 20%;
@@ -80,4 +85,47 @@ body, html {
 }
 .container-row-down > .counter > .row-button > #plus:active, .container-row-down > .counter > .row-button #minus:active {
   background-color: rgb(86, 86, 116);
+}
+
+.row-color {
+  width: 20%;
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.row-color > .color1, .row-color .color2, .row-color .color3 {
+  background-color: rgb(87, 87, 87);
+  padding: 5px;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row-color > .color1:hover, .row-color .color2:hover, .row-color .color3:hover {
+  transform: scale(1.1);
+}
+
+.counter-2 {
+  width: 30%;
+  height: 80%;
+  border: solid rgb(8, 151, 115) 2px;
+  border-radius: 20px;
+  background-color: rgb(212, 153, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 6px 13px 3px rgba(6, 180, 64, 0.849);
+}
+
+.counter-3 {
+  width: 30%;
+  height: 80%;
+  border: solid rgb(143, 219, 215) 2px;
+  border-radius: 20px;
+  background-color: rgb(212, 153, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 6px 13px 3px rgba(19, 178, 226, 0.849);
 }/*# sourceMappingURL=style.css.map */
