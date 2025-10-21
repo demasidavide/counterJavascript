@@ -80,12 +80,8 @@ generate.addEventListener('click', ()=>{
         span2.className='color'
         span3.className='color-selected'
     });
- 
-
-
-
     }else{
-        alert('Elemento gia creato');
+        alert('Counter già creato!');
     }
 
      
