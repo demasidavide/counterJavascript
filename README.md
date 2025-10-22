@@ -1,6 +1,8 @@
 # counterJavascript
+
 Counter realizzato in Javascript/Html/CSS
-<h1 align="left">Hi 👋! My name is Davide from &#x1f1ee; &#x1f1f9;</h1>
+
+<h1 align="left">Hi 👋! My name is Davide from &#x1f1ee;&#x1f1f9; 🍕 🤌🤌 </h1>
 
 ###
 
