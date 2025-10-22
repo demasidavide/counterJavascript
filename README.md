@@ -2,7 +2,7 @@
 
 Counter realizzato in Javascript/Html/CSS
 
-<h1 align="left">Hi 👋! My name is Davide from &#x1f1ee;&#x1f1f9;🍕&#127837;🛵</h1>
+<h1 align="left">Hi 👋! My name is Davide from <img src="/counterJavascript/assets/img/icons8-italia-emoji-50.png">🍕&#127837;🛵</h1>
 
 ###
 
