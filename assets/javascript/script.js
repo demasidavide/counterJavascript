@@ -31,7 +31,7 @@ generate.addEventListener('click', ()=>{
         display.textContent=number;
      });   
     const btnM=document.createElement('button');
-    btnM.id='plus';
+    btnM.id='minus';
     btnM.textContent='-';
     rowButton.appendChild(btnM);
     // funzione sottrai numero
@@ -78,4 +78,4 @@ generate.addEventListener('click', ()=>{
     }else{
         alert('Counter già creato!');
     }
-})
+})  

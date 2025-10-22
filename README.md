@@ -2,18 +2,19 @@
 
 Counter realizzato in Javascript/Html/CSS
 
-<h1 align="left">Hi 👋! My name is Davide from <img src="/counterJavascript/assets/img/icons8-italia-emoji-50.png">🍕&#127837;🛵</h1>
+<h1 align="left">Hi 👋! My name is Davide from &#x1f1ee;&#x1f1f9;🍕&#127837;🛵</h1>
+<h2>ClickCounter is a very very <s>very</s> <s>very</s> simple counter made in Javascript.</h2>
 
 ###
 
 <div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=demasidavide&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
+  <!-- <img src="https://github-readme-stats.vercel.app/api?username=demasidavide&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  /> -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=demasidavide&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
 
 ###
 
-<img align="right" height="150" src="/counterJavascript/assets/img/saluto.gif"  />
+<img align="right" height="150" src="/counterJavascript/assets/img/icons8-italia-emoji-50.png"  />
 
 ###
 

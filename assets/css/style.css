@@ -4,7 +4,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #212121;
+  background-color: #0A192F;
 }
 
 .container-row-up {
@@ -15,15 +15,16 @@ body, html {
   height: 30%;
 }
 .container-row-up > .hi {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: rgb(64, 55, 143);
+  background-color: #112240;
   border-radius: 20px;
-  box-shadow: 1px 6px 13px 3px rgba(98, 118, 209, 0.81);
-  color: white;
+  box-shadow: 1px 6px 13px 3px #64FFDA;
+  color: #E6F1FF;
   padding: 20px;
 }
 .container-row-up > .hi > .title {
@@ -31,18 +32,19 @@ body, html {
   margin: 0;
 }
 .container-row-up > .hi > .generate {
-  background-color: azure;
+  background-color: #E6F1FF;
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(64, 55, 143);
+  color: #233554;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 8px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 .container-row-up > .hi > .generate:hover {
-  box-shadow: 5px 5px 15px 5px rgba(226, 221, 221, 0.411);
+  transform: translateY(-10%);
+  box-shadow: 5px 5px 15px 5px #64FFDA;
 }
 
 .container-row-down {
@@ -54,20 +56,20 @@ body, html {
   transition: opacity 0.6s;
 }
 .container-row-down > .counter {
-  width: 30%;
+  width: 15%;
   height: 80%;
-  border: solid rgb(18, 8, 151) 2px;
+  border: solid #233554 12px;
   border-radius: 20px;
   background-color: rgb(73, 64, 54);
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 6px 13px 3px rgba(98, 118, 209, 0.81);
+  box-shadow: 1px 6px 13px 3px #64FFDA;
 }
 .container-row-down > .counter > .display {
   height: 40%;
-  width: 95%;
-  margin: 9px;
+  width: 85%;
+  margin: 9px 10px 10px 10px;
   border: solid 1px green;
   background-color: rgb(76, 134, 76);
   border-radius: 10px;
@@ -81,7 +83,7 @@ body, html {
 }
 .container-row-down > .counter > .row-button {
   height: 20%;
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,9 +127,9 @@ body, html {
 }
 
 .counter-2 {
-  width: 30%;
+  width: 15%;
   height: 80%;
-  border: solid rgb(8, 151, 115) 2px;
+  border: solid #233554 12px;
   border-radius: 20px;
   background-color: rgb(212, 153, 86);
   display: flex;
@@ -176,9 +178,9 @@ body, html {
 }
 
 .counter-3 {
-  width: 30%;
+  width: 15%;
   height: 80%;
-  border: solid rgb(8, 8, 8) 2px;
+  border: solid #233554 12px;
   border-radius: 20px;
   background-color: rgb(107, 106, 104);
   display: flex;
