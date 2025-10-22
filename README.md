@@ -11,7 +11,7 @@ Counter realizzato in Javascript/Html/CSS
 
 ###
 
-<img align="right" height="150" src=""  />
+<img align="right" height="150" src="C:\Users\Utente\Desktop\saluto.mp4"  />
 
 ###
 
