@@ -139,7 +139,7 @@ body, html {
 }
 .counter-2 > .display {
   height: 40%;
-  width: 95%;
+  width: 85%;
   margin: 9px;
   border: solid 1px green;
   background-color: rgb(133, 156, 230);
@@ -154,7 +154,7 @@ body, html {
 }
 .counter-2 > .row-button {
   height: 20%;
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -186,11 +186,11 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 6px 13px 3px rgba(28, 29, 29, 0.849);
+  box-shadow: 1px 6px 13px 3px rgba(210, 211, 211, 0.849);
 }
 .counter-3 > .display {
   height: 40%;
-  width: 95%;
+  width: 85%;
   margin: 9px;
   border: solid 1px green;
   background-color: rgb(240, 247, 240);
@@ -205,7 +205,7 @@ body, html {
 }
 .counter-3 > .row-button {
   height: 20%;
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -229,13 +229,22 @@ body, html {
 }
 
 .row-color > .color-selected {
-  background-color: rgb(49, 19, 218);
+  background-color: #64FFDA;
   padding: 5px;
   border-radius: 5px;
-  color: aliceblue;
+  color: #0A192F;
   font-weight: bold;
   cursor: pointer;
 }
 .row-color > .color-selected:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1470px) {
+  .container-row-down > .counter, .container-row-down .counter-2, .container-row-down .counter-3 {
+    margin-top: 4%;
+  }
+  .container-row-down > .counter > .display, .container-row-down .counter-2 > .display, .container-row-down .counter-3 > .display {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
