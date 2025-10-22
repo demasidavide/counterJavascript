@@ -5,10 +5,6 @@ $testo-secondario:#8892B0;
 $card:#112240;
 $hover:#233554;
 
-
-
-
-
 body, html{
     width: 100%;
     height: 100%;
@@ -18,7 +14,6 @@ body, html{
     background-color: $sfondo;
 }
 .container-row-up{
-    
     display: flex;
     align-items: flex-start;
     text-align: center;
@@ -246,9 +241,7 @@ body, html{
             transform: scale(1.1);
         }
 }
-
 @media screen and (max-width: 1470px){
-
     .container-row-down{
         >.counter, .counter-2, .counter-3{
             margin-top: 4%;
