@@ -10,6 +10,7 @@ body, html {
 .container-row-up {
   display: flex;
   align-items: flex-start;
+  text-align: center;
   justify-content: center;
   width: 30%;
   height: 30%;
@@ -242,6 +243,18 @@ body, html {
 
 @media screen and (max-width: 1470px) {
   .container-row-down > .counter, .container-row-down .counter-2, .container-row-down .counter-3 {
+    margin-top: 4%;
+  }
+  .container-row-down > .counter > .display, .container-row-down .counter-2 > .display, .container-row-down .counter-3 > .display {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .container-row-up {
+    width: 40%;
+  }
+  .container-row-down > .counter, .container-row-down .counter-2, .container-row-down .counter-3 {
+    width: 20%;
     margin-top: 4%;
   }
   .container-row-down > .counter > .display, .container-row-down .counter-2 > .display, .container-row-down .counter-3 > .display {
