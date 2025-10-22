@@ -1,6 +1,6 @@
 # counterJavascript
 
-Counter realizzato in Javascript/Html/CSS
+Counter made in Javascript/Html/CSS
 
 <h1 align="left">Hi 👋! My name is Davide from &#x1f1ee;&#x1f1f9;🍕&#127837;🛵</h1>
 <h2>Here you can try a very very <s>very</s> <s>very</s> simple counter made entirely in javascript.</h2>
