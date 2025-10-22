@@ -17,9 +17,9 @@ The operation is simple:
 - Below the counter I placed three buttons to set three different colors.
 </p>
 
-<img height="180" src="counter1.PNG" alt="color 1" />
-<img height="180" src="counter2.PNG" alt="color 2" />
-<img height="180" src="counter3.PNG" alt="color 3" />
+<img align="center" height="180" src="counter1.PNG" alt="color 1" />
+<img align="center" height="180" src="counter2.PNG" alt="color 2" />
+<img align="center" height="180" src="counter3.PNG" alt="color 3" />
 
 ###
 
