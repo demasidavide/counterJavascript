@@ -53,6 +53,10 @@ generate.addEventListener('click', ()=>{
     btnM.addEventListener('click', ()=>{
         number--;
         display.textContent=number;
+        if(number<0){
+            number=0;
+            display.textContent=number;
+        }
     });
     // creo pulsante reset
     const reset= createChildSibling('button','reset',counter)
