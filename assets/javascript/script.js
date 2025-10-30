@@ -76,21 +76,23 @@ generate.addEventListener('click', ()=>{
     span3.textContent= 'Colore 3'
         //creo event-delegation su row-span
     rowSpan.addEventListener('click', (e)=>{
-        if(e.target=== span2){
-            counter.className= 'counter-2';
-            span1.className='color'
-            span2.className='color-selected'
-            span3.className='color'
-        }else if(e.target=== span3){
-            counter.className= 'counter-3';
-            span1.className='color'
-            span2.className='color'
-            span3.className='color-selected'
-        }else if(e.target=== span1){
-            counter.className= 'counter';
-            span1.className='color-selected'
-            span2.className='color'
-            span3.className='color'
-        }
+    const themeIndex = e.target.getAttribute('data-theme');//controllo per errori se clicchi in mezzo ai pulsanti
+    if (themeIndex !== null) {
+       //array per span e classi counrter
+    const spans = [span1, span2, span3];
+    const counters = ['counter', 'counter-2', 'counter-3'];
+    
+    const clickedIndex = spans.indexOf(e.target);
+    counter.className = counters[clickedIndex];
+        
+    spans.forEach((span, index) => {
+        if (index === clickedIndex) {
+        span.className = 'color-selected';
+    } else {
+        span.className = 'color';
+    }
+        })
+    }
     })
- })  
+})
+ 
