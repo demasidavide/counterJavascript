@@ -13,7 +13,7 @@ function createChildSibling(type,classId,parent){ //crea elementi (elemento html
     return e;
 }
     //funzione per aggiornare best score
-function updateScore(element){
+function updateScore(element){ 
     if(number>bestScore){
         bestScore=number;
         element.textContent=number;
@@ -40,22 +40,22 @@ generate.addEventListener('click', ()=>{
         // creo bottoni figli e fratelli fra loro
     const btnP=createChildSibling('button','#plus',rowButton);    
     btnP.textContent='+';
-        // funzione aggiungi numero
-    btnP.addEventListener('click',()=>{
-        number++;
-        display.textContent=number;
-        updateScore(pScore);
-     });
         //creo bottone meno 
     const btnM=createChildSibling('button','#minus',rowButton);
-        // btnM.id='minus';
     btnM.textContent='-';
-    btnM.addEventListener('click', ()=>{
-        number--;
+        //creo event delegation per bottoni + e-
+    rowButton.addEventListener('click',(e)=>{
+        if(e.target.id==='plus'){
+            number++;
+            display.textContent=number;
+            updateScore(pScore);  
+        }else if(e.target.id==='minus'){
+            number--;
         display.textContent=number;
-        if(number<0){
+            if(number<0){
             number=0;
             display.textContent=number;
+        }
         }
     });
     // creo pulsante reset
