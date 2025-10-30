@@ -15,8 +15,7 @@ function createChildSibling(type,classId,parent){ //crea elementi (elemento html
 
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
-        // controllo per vedere se la finestra esiste gia
-    if(!document.querySelector('.container-row-down')){
+    document.querySelector('.container-row-up').style.display='none'
         // creo div container figlio
     const nuovoDiv=createChildSibling('div','container-row-down',document.body);
         // creo div counter figlio
@@ -77,7 +76,4 @@ generate.addEventListener('click', ()=>{
             span3.className='color'
         }
     })
-    }else{
-        alert('Counter già creato!');
-    }
-})  
+ })  
