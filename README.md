@@ -12,16 +12,17 @@ Counter made in Javascript/Html/CSS
 The operation is simple:
 
 - When the user accesses the page, he must press the "Iniziamo" button to generate the counter.
-- A control will allow only one counter to be generated.
+- The counter will be displayed with a small display to show the best result obtained.
 - You can increase or decrease the value infinitely (or until your mouse breaks😆).
+- You can also reset your counter with the 'Reset' button. Don't worry, your best score won't be reset.
 - Below the counter I placed three buttons to set three different colors.
 </p>
 
-<img align="center" height="180" src="counter1.PNG" alt="color 1" /><img align="center" height="180" src="counter2.PNG" alt="color 2" /><img align="center" height="180" src="counter3.PNG" alt="color 3" />
+<img align="center" height="180" src="./assets/img/counter1.PNG" alt="color 1" /><img align="center" height="180" src="./assets/img/counter2.PNG" alt="color 2" /><img align="center" height="180" src="./assets/img/counter3.PNG" alt="color 3"/>
 
 ###
 
-<p>Try it: <a href="https://github.com/demasidavide/counterJavascript/tree/main">HERE</a></p>
+<p>Try it: <a href="https://jscounterjs.netlify.app">HERE</a></p>
 
 ###
 
