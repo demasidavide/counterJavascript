@@ -1,4 +1,12 @@
-let number=0;
+let number=0; //inizializzo variabile iniziale counter
+
+function createChild(name,type,className,parent){
+    name= document.createElement(type);
+    name.classList.add(className);
+    parent.appendChild(name);
+    return name;
+}
+
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
     // controllo per vedere se la finestra esiste gia
@@ -11,11 +19,16 @@ generate.addEventListener('click', ()=>{
     const counter=document.createElement('div');
     counter.classList.add('counter');
     nuovoDiv.appendChild(counter);
+
+    //prova con funzione
+       const display= createChild('display','div','display',counter);
+       display.textContent=number;
+
     // creo div display figlio
-    const display=document.createElement('div');
-    display.classList.add('display');
-    display.textContent=number;
-    counter.appendChild(display);
+        // const display=document.createElement('div');
+        // display.classList.add('display');
+        // display.textContent=number;
+        // counter.appendChild(display);
     // creo div row-button fratello di display
     const rowButton= document.createElement('div');
     rowButton.classList.add('row-button');
