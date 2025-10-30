@@ -2,13 +2,16 @@
 let number=0; 
 
 //funzione per creare elementi figli
-function createChildSibling(name,type,className,parent){ 
+function createChildSibling(name,type,classId,parent){ 
     name= document.createElement(type);
-    name.classList.add(className);
+    if(classId.startsWith('#')){
+        name.id= classId.substring(1);
+    }else{
+        name.classList.add(classId);
+    }
     parent.appendChild(name);
     return name;
 }
-
 
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
@@ -44,7 +47,7 @@ generate.addEventListener('click', ()=>{
     // const btnP=document.createElement('button');
     // btnP.id='plus';
     btnP.textContent='+';
-    // rowButton.appendChild(btnP);
+    rowButton.appendChild(btnP);
     // funzione aggiungi numero
     btnP.addEventListener('click',()=>{
         number++;
