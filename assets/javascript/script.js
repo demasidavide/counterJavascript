@@ -2,7 +2,7 @@
 let number=0; 
 
 //funzione per creare elementi figli/fratelli con controllo classe/id
-function createChildSibling(type,classId,parent){ 
+function createChildSibling(type,classId,parent){ //crea elementi (elemento html, classe o id, elemento padre)
     const e= document.createElement(type);
     if(classId.startsWith('#')){
         e.id= classId.substring(1);
@@ -66,39 +66,65 @@ generate.addEventListener('click', ()=>{
     // const rowSpan= document.createElement('div');
     // rowSpan.classList.add('row-color');
     // nuovoDiv.append(rowSpan);
+    
+   
+    
+    
     // creo 3 span per colori
-    const span1=createChildSibling('span','color-selected',rowSpan)
+    const span1=createChildSibling('span','color-selected',rowSpan);
     // const span1=document.createElement('span');
     // span1.classList.add('color-selected');
     span1.textContent= 'Colore 1'
     // rowSpan.appendChild(span1);
-    span1.addEventListener('click',()=>{
-        counter.className= 'counter';
-        span1.className='color-selected'
-        span2.className='color'
-        span3.className='color'
 
-    });
-    const span2=document.createElement('span');
-    span2.classList.add('color');
+    // span1.addEventListener('click',()=>{
+    //     counter.className= 'counter';
+    //     span1.className='color-selected'
+    //     span2.className='color'
+    //     span3.className='color'
+
+    // });
+    const span2=createChildSibling('span','color',rowSpan);
+    // const span2=document.createElement('span');
+    // span2.classList.add('color');
     span2.textContent= 'Colore 2';
-    rowSpan.appendChild(span2);
-    span2.addEventListener('click',()=>{
-        counter.className= 'counter-2'
-        span1.className='color'
-        span2.className='color-selected'
-        span3.className='color'
-    });
-    const span3=document.createElement('span');
-    span3.classList.add('color');
+    // rowSpan.appendChild(span2);
+    // span2.addEventListener('click',()=>{
+    //     counter.className= 'counter-2'
+    //     span1.className='color'
+    //     span2.className='color-selected'
+    //     span3.className='color'
+    // });
+    const span3=createChildSibling('span','color',rowSpan);
+    // const span3=document.createElement('span');
+    // span3.classList.add('color');
     span3.textContent= 'Colore 3'
-    rowSpan.appendChild(span3);
-    span3.addEventListener('click',()=>{
-        counter.className= 'counter-3'
-        span1.className='color'
-        span2.className='color'
-        span3.className='color-selected'
-    });
+    // rowSpan.appendChild(span3);
+    // span3.addEventListener('click',()=>{
+    //     counter.className= 'counter-3'
+    //     span1.className='color'
+    //     span2.className='color'
+    //     span3.className='color-selected'
+    // });
+     rowSpan.addEventListener('click', (e)=>{
+        if(e.target=== span2){
+            counter.className= 'counter-2';
+            span1.className='color'
+            span2.className='color-selected'
+            span3.className='color'
+        }else if(e.target=== span3){
+            counter.className= 'counter-3';
+            span1.className='color'
+            span2.className='color'
+            span3.className='color-selected'
+        }else if(e.target=== span1){
+            counter.className= 'counter';
+            span1.className='color-selected'
+            span2.className='color'
+            span3.className='color'
+        }
+    })
+
     }else{
         alert('Counter già creato!');
     }
