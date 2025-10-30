@@ -79,7 +79,6 @@ generate.addEventListener('click', ()=>{
     const spans = [span1, span2, span3];
     const counters = ['counter', 'counter-2', 'counter-3'];
     const clickedIndex = spans.indexOf(e.target);
-    
     if (clickedIndex !== -1) { // Se l'elemento è stato trovato
         counter.className = counters[clickedIndex];
         spans.forEach((span, index) => {
