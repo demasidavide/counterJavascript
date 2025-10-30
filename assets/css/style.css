@@ -45,7 +45,7 @@ body, html {
 }
 .container-row-up > .hi > .generate:hover {
   transform: translateY(-10%);
-  box-shadow: 5px 5px 15px 5px #64FFDA;
+  box-shadow: 1px 1px 15px 5px #64FFDA;
 }
 
 .container-row-down {
@@ -105,6 +105,23 @@ body, html {
 }
 .container-row-down > .counter > .row-button > #plus:hover, .container-row-down > .counter > .row-button #minus:hover {
   border: solid 1px white;
+}
+.container-row-down > .counter > .reset {
+  background-color: red;
+  text-decoration: none;
+  border-radius: 10px;
+  border: solid 1px transparent;
+  color: #E6F1FF;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+.container-row-down > .counter > .reset:active {
+  background-color: rgb(86, 86, 116);
+}
+.container-row-down > .counter > .reset:hover {
+  box-shadow: 1px 1px 15px 5px red;
 }
 
 .row-color {
@@ -177,6 +194,23 @@ body, html {
 .counter-2 > .row-button > #plus:hover, .counter-2 > .row-button #minus:hover {
   border: solid 1px rgb(13, 9, 216);
 }
+.counter-2 > .reset {
+  background-color: red;
+  text-decoration: none;
+  border-radius: 10px;
+  border: solid 1px transparent;
+  color: #E6F1FF;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+.counter-2 > .reset:active {
+  background-color: rgb(86, 86, 116);
+}
+.counter-2 > .reset:hover {
+  box-shadow: 1px 1px 15px 5px red;
+}
 
 .counter-3 {
   width: 15%;
@@ -227,6 +261,23 @@ body, html {
 }
 .counter-3 > .row-button > #plus:hover, .counter-3 > .row-button #minus:hover {
   border: solid 1px rgb(29, 28, 28);
+}
+.counter-3 > .reset {
+  background-color: red;
+  text-decoration: none;
+  border-radius: 10px;
+  border: solid 1px transparent;
+  color: #E6F1FF;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+.counter-3 > .reset:active {
+  background-color: rgb(86, 86, 116);
+}
+.counter-3 > .reset:hover {
+  box-shadow: 1px 1px 15px 5px red;
 }
 
 .row-color > .color-selected {

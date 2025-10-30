@@ -12,6 +12,7 @@ function createChildSibling(type,classId,parent){ //crea elementi (elemento html
     parent.appendChild(e);
     return e;
 }
+
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
         // controllo per vedere se la finestra esiste gia
@@ -41,6 +42,13 @@ generate.addEventListener('click', ()=>{
         number--;
         display.textContent=number;
     });
+    // creo pulsante reset
+    const reset= createChildSibling('button','reset',counter)
+    reset.textContent='Reset'
+    reset.onclick=()=>{
+    number=0;
+    display.textContent=number;
+    }
         // creo riga per colori 
     const rowSpan=createChildSibling('div','row-color',nuovoDiv);
         // creo 3 span per colori

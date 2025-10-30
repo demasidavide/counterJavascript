@@ -48,7 +48,7 @@ body, html{
                 transition: 0.3s ease-in-out;
                 &:hover{
                     transform:translateY(-10%);
-                    box-shadow: 5px 5px 15px 5px $pulsanti;
+                    box-shadow: 1px 1px 15px 5px $pulsanti;
                 }
             }
     }
@@ -108,6 +108,24 @@ body, html{
                             border:solid 1px white;
                         }
                     }
+            }
+            >.reset{
+                background-color: red;
+                text-decoration: none;
+                border-radius: 10px;
+                border:solid 1px transparent;
+                color:$testo-principale;
+                padding:10px;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 50px;
+                &:active {
+                            background-color:  rgb(86, 86, 116);
+                        }  
+                        &:hover{
+                             //border:solid 1px white;
+                             box-shadow:1px 1px 15px 5px red;
+                        }
             }
     }
 }
@@ -179,6 +197,24 @@ body, html{
                         }
                     }
             }
+            >.reset{
+                background-color: red;
+                text-decoration: none;
+                border-radius: 10px;
+                border:solid 1px transparent;
+                color:$testo-principale;
+                padding:10px;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 50px;
+                &:active {
+                            background-color:  rgb(86, 86, 116);
+                        }  
+                        &:hover{
+                             //border:solid 1px white;
+                             box-shadow:1px 1px 15px 5px red;
+                        }
+            }
 }
 .counter-3{
         width: 15%;
@@ -228,6 +264,24 @@ body, html{
                             border:solid 1px rgb(29, 28, 28);
                         }
                     }
+            }
+            >.reset{
+                background-color: red;
+                text-decoration: none;
+                border-radius: 10px;
+                border:solid 1px transparent;
+                color:$testo-principale;
+                padding:10px;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: 50px;
+                &:active {
+                            background-color:  rgb(86, 86, 116);
+                        }  
+                        &:hover{
+                             //border:solid 1px white;
+                             box-shadow:1px 1px 15px 5px red;
+                        }
             }
 }
 .row-color >.color-selected{
