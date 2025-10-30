@@ -1,16 +1,16 @@
 //inizializzo variabile iniziale counter
 let number=0; 
 
-//funzione per creare elementi figli
-function createChildSibling(name,type,classId,parent){ 
-    name= document.createElement(type);
+//funzione per creare elementi figli/fratelli con controllo classe/id
+function createChildSibling(type,classId,parent){ 
+    const e= document.createElement(type);
     if(classId.startsWith('#')){
-        name.id= classId.substring(1);
+        e.id= classId.substring(1);
     }else{
-        name.classList.add(classId);
+        e.classList.add(classId);
     }
-    parent.appendChild(name);
-    return name;
+    parent.appendChild(e);
+    return e;
 }
 
 const generate= document.querySelector('#generate');
@@ -18,59 +18,60 @@ generate.addEventListener('click', ()=>{
     // controllo per vedere se la finestra esiste gia
     if(!document.querySelector('.container-row-down')){
     // creo div container figlio
-    const nuovoDiv=createChildSibling('nuovoDiv','div','container-row-down',document.body);
+    const nuovoDiv=createChildSibling('div','container-row-down',document.body);
         // const nuovoDiv = document.createElement('div');
         // nuovoDiv.classList.add('container-row-down');
         // document.body.appendChild(nuovoDiv);
     // creo div counter figlio
-    const counter=createChildSibling('counter','div','counter',nuovoDiv)
+    const counter=createChildSibling('div','counter',nuovoDiv)
         //const counter=document.createElement('div');
         //counter.classList.add('counter');
         //nuovoDiv.appendChild(counter);
     // creo div display figlio
-       const display= createChildSibling('display','div','display',counter);
+       const display= createChildSibling('div','display',counter);
        display.textContent=number;
-
-    
         // const display=document.createElement('div');
         // display.classList.add('display');
         // display.textContent=number;
         // counter.appendChild(display);
     // creo div row-button fratello di display
-    const rowButton=createChildSibling('rowButton','div','row-button',counter)
+    const rowButton=createChildSibling('div','row-button',counter)
     // const rowButton= document.createElement('div');
     // rowButton.classList.add('row-button');
     // counter.appendChild(rowButton);
 
     // creo bottoni figli e fratelli fra loro
-    const btnP=createChildSibling('btnP','button','#plus',rowButton);
+    const btnP=createChildSibling('button','#plus',rowButton);
     // const btnP=document.createElement('button');
     // btnP.id='plus';
     btnP.textContent='+';
-    rowButton.appendChild(btnP);
+    // rowButton.appendChild(btnP);
     // funzione aggiungi numero
     btnP.addEventListener('click',()=>{
         number++;
         display.textContent=number;
-     });   
-    const btnM=document.createElement('button');
-    btnM.id='minus';
+     });
+     //creo bottone meno 
+    const btnM=createChildSibling('button','#minus',rowButton);
+    // btnM.id='minus';
     btnM.textContent='-';
-    rowButton.appendChild(btnM);
+    // rowButton.appendChild(btnM);
     // funzione sottrai numero
     btnM.addEventListener('click', ()=>{
         number--;
         display.textContent=number;
     });
-    // creo riga per colori
-    const rowSpan= document.createElement('div');
-    rowSpan.classList.add('row-color');
-    nuovoDiv.append(rowSpan);
+    // creo riga per colori 
+    const rowSpan=createChildSibling('div','row-color',nuovoDiv);
+    // const rowSpan= document.createElement('div');
+    // rowSpan.classList.add('row-color');
+    // nuovoDiv.append(rowSpan);
     // creo 3 span per colori
-    const span1=document.createElement('span');
-    span1.classList.add('color-selected');
+    const span1=createChildSibling('span','color-selected',rowSpan)
+    // const span1=document.createElement('span');
+    // span1.classList.add('color-selected');
     span1.textContent= 'Colore 1'
-    rowSpan.appendChild(span1);
+    // rowSpan.appendChild(span1);
     span1.addEventListener('click',()=>{
         counter.className= 'counter';
         span1.className='color-selected'
