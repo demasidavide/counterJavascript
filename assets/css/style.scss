@@ -53,8 +53,17 @@ body, html{
             }
     }
 }
+.best{
+    background-color: $testo-principale;
+    color:$sfondo;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 .container-row-down{
-    margin-top: 200px;
+    margin-top: 20px;
     width: 100%;
     height: 60%;
     display: flex;

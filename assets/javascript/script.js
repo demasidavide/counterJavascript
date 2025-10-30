@@ -1,6 +1,6 @@
     //inizializzo variabile iniziale counter
 let number=0; 
-
+let bestScore=0;
     //funzione per creare elementi figli/fratelli con controllo classe/id
 function createChildSibling(type,classId,parent){ //crea elementi (elemento html, classe o id, elemento padre)
     const e= document.createElement(type);
@@ -12,10 +12,22 @@ function createChildSibling(type,classId,parent){ //crea elementi (elemento html
     parent.appendChild(e);
     return e;
 }
-
+    //funzione per aggiornare best score
+function updateScore(element){
+    if(number>bestScore){
+        bestScore=number;
+        element.textContent=number;
+    }
+}
 const generate= document.querySelector('#generate');
 generate.addEventListener('click', ()=>{
     document.querySelector('.container-row-up').style.display='none'
+        //creo p best score
+    const p=createChildSibling('p','best',document.body);
+    p.textContent='Best score';
+        //creo p risultato score
+    const pScore=createChildSibling('p','best',document.body);
+    pScore.textContent=bestScore;
         // creo div container figlio
     const nuovoDiv=createChildSibling('div','container-row-down',document.body);
         // creo div counter figlio
@@ -32,6 +44,7 @@ generate.addEventListener('click', ()=>{
     btnP.addEventListener('click',()=>{
         number++;
         display.textContent=number;
+        updateScore(pScore);
      });
         //creo bottone meno 
     const btnM=createChildSibling('button','#minus',rowButton);
